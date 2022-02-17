@@ -69,8 +69,6 @@ function playRound(playerSelection, computerSelection) {
     }
     else { 
         result = 'It\'s a tie!';
-        computerScore += 1;
-        playerScore += 1;
         console.log(result);
         console.log(playerScore, computerScore);
         return { result, computerScore, playerScore };
