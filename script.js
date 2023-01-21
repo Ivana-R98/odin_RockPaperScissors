@@ -42,7 +42,9 @@ function playRound(playerSelection, computerSelection) {
         replay.style.display = "block";
         document.getElementById("rock").style.display = "none";
         document.getElementById("paper").style.display = "none";
-        document.getElementById("scissors").style.display = "none";           
+        document.getElementById("scissors").style.display = "none"; 
+        p1.style.backgroundColor = '#fcf7c6'; 
+        p1.style.color = 'rgb(137, 0, 172)';     
     }
     else if(computerScore === 5) {
         console.log("Computer wins!");
@@ -51,6 +53,8 @@ function playRound(playerSelection, computerSelection) {
         document.getElementById("rock").style.display = "none";
         document.getElementById("paper").style.display = "none";
         document.getElementById("scissors").style.display = "none";
+        p1.style.backgroundColor = '#fcf7c6';
+        p1.style.color = 'rgb(137, 0, 172)'; 
     }
 }
 
@@ -88,9 +92,7 @@ function compare (playerSelection, computerSelection) {
     }
     else { 
         result = 'It\'s a tie!';
-    } 
-    console.log(result);
-    console.log("Player score is:", playerScore, ", Computer score is: ", computerScore);
+    }   
     let p1 = document.getElementById("para1");
     p1.innerText =  result;
     player.innerText = `Players score:  ${playerScore}`; 
